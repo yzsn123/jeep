@@ -22,7 +22,7 @@ for(let i = 0; i < lifeNav.length; i++){
 }
 
 
-
+//滚动条跳转
 function jumpA(dom1,dom2){
     var value = dom1.getAttribute('value');
     var domScroll = document.getElementById(value);
@@ -31,6 +31,7 @@ function jumpA(dom1,dom2){
     scrollMove(dom2,current,target);
     console.log(dom1,dom2,target,current);
 }
+//滚动条移动
 function scrollMove(dom,current,target){
     var speed = (target - current)/20;
     clearInterval(dom.time);
@@ -44,12 +45,14 @@ function scrollMove(dom,current,target){
     },10);
 }
 
+
+
 var clubD = document.querySelectorAll('.img-content div');
 var clubNum = document.querySelectorAll('.club-num span');
 var clubL = document.querySelector('.club-banner .left');
 var clubR = document.querySelector('.club-banner .right');
 opaMove(clubD,clubL,clubR,clubNum);
-
+//轮播图
 function opaMove(dom,left,right,num){
     var preIndex = 0;
     var index = 0;

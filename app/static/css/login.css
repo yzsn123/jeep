@@ -24,6 +24,16 @@ html {
   padding: 36px 30px;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
+  position: relative;
+}
+.login-box .login-wrap h3 {
+  font-size: 12px;
+  color: #ff0000;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: 15px;
 }
 .login-box .login-wrap .login {
   display: block;
@@ -75,5 +85,4 @@ html {
 .login-box .login-wrap .submit2 {
   background: transparent;
   color: white;
-  text-decoration: underline;
 }
