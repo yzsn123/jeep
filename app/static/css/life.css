@@ -1,0 +1,286 @@
+.nav-bg {
+  width: 100%;
+  height: 110px;
+  background: black;
+}
+.nav-bg .nav {
+  position: fixed;
+  z-index: 888;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: black;
+  line-height: 40px;
+}
+.nav-bg .nav li {
+  float: left;
+  margin-right: 25px;
+}
+.nav-bg .nav li a {
+  font-size: 14px;
+  color: white;
+}
+.nav-bg .nav .top {
+  float: right;
+}
+
+#history {
+  width: 100%;
+  text-align: center;
+  line-height: 84px;
+}
+#history .his-head {
+  width: 100%;
+  height: 84px;
+  background: black;
+}
+#history .his-head h2 {
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+}
+#history img {
+  display: block;
+}
+#history > img {
+  width: 100%;
+  height: 608px;
+}
+#history .his-text1 {
+  padding: 42px 0 56px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#history .his-text1 img {
+  width: 1240px;
+}
+#history .his-text1 .his-jt {
+  position: absolute;
+  top: -42px;
+  width: 76px;
+}
+#history .his-year {
+  width: 100%;
+  height: 614px;
+  background: url("../images/h_bg1.jpg") no-repeat;
+  background-size: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#history .his-year .year-head {
+  height: 83px;
+  background: black;
+}
+#history .his-year .year-head a {
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 550;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+#history .his-year .year-content {
+  height: 531px;
+  top: 83px;
+  position: absolute;
+  overflow: auto;
+}
+#history .his-year .year-content img {
+  width: 1265px;
+  display: block;
+}
+
+#exploreClub {
+  width: 100%;
+  background: #f2f2f2;
+  height: 3700px;
+}
+#exploreClub .club-head {
+  width: 100%;
+  height: 83px;
+  background: black;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 550;
+  line-height: 83px;
+}
+#exploreClub > img:nth-of-type(1) {
+  width: 100%;
+  height: 750px;
+  display: block;
+}
+#exploreClub .club-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#exploreClub .club-content > img:nth-of-type(1) {
+  width: 1280px;
+  margin: 58px 0 70px;
+}
+#exploreClub .club-content > img:nth-of-type(2) {
+  position: absolute;
+  top: -42px;
+}
+#exploreClub .club-content > img:nth-of-type(3), #exploreClub .club-content > img:nth-of-type(4) {
+  width: 100%;
+  height: 900px;
+}
+#exploreClub .club-content .club-play {
+  position: absolute;
+  top: 244px;
+  width: 1280px;
+}
+#exploreClub .club-content .club-play .club-go {
+  background: white;
+  width: 100%;
+}
+#exploreClub .club-content .club-play .club-go h3 {
+  width: 100%;
+  text-align: center;
+  height: 83px;
+  line-height: 83px;
+  color: white;
+  font-weight: 550;
+  background: black;
+}
+#exploreClub .club-content .club-play .club-go .club-banner {
+  width: 100%;
+  height: 705px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+#exploreClub .club-content .club-play .club-go .club-banner .img-content {
+  width: 975px;
+  height: 100%;
+  position: relative;
+}
+#exploreClub .club-content .club-play .club-go .club-banner .img-content img {
+  position: absolute;
+  width: 100%;
+}
+#exploreClub .club-content .club-play .club-go .club-banner .img-content img:nth-of-type(2) {
+  top: 464px;
+}
+#exploreClub .club-content .club-play .club-go .club-banner .img-content div {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#exploreClub .club-content .club-play .club-go .club-banner .club-num {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+}
+#exploreClub .club-content .club-play .club-go .club-banner .club-num span {
+  display: inline-block;
+  margin: 0 15px;
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#exploreClub .club-content .club-play .club-go .club-banner .left, #exploreClub .club-content .club-play .club-go .club-banner .right {
+  position: absolute;
+  top: 260px;
+  cursor: pointer;
+}
+#exploreClub .club-content .club-play .club-go .club-banner .left {
+  left: 52px;
+}
+#exploreClub .club-content .club-play .club-go .club-banner .right {
+  right: 52px;
+}
+#exploreClub .club-content .club-play .club-run {
+  width: 1280px;
+  margin-top: 31px;
+}
+#exploreClub .club-content .club-play .club-run h3 {
+  width: 100%;
+  height: 83px;
+  line-height: 83px;
+  color: white;
+  text-align: center;
+  background: black;
+}
+#exploreClub .club-content .club-play .club-run .run-content {
+  height: 410px;
+}
+#exploreClub .club-content .club-play .club-run .run-content img:nth-of-type(1) {
+  width: 485px;
+  height: 323px;
+  margin-top: 68px;
+  margin-left: 152px;
+}
+#exploreClub .club-content .club-play .club-run .run-content img:nth-of-type(2) {
+  width: 335px;
+  height: 252px;
+  margin-left: 75px;
+  position: relative;
+  top: -29px;
+}
+#exploreClub .club-content .club-play .club-photo {
+  width: 1280px;
+  margin-top: 502px;
+}
+#exploreClub .club-content .club-play .club-photo h3 {
+  width: 100%;
+  height: 83px;
+  line-height: 83px;
+  color: white;
+  text-align: center;
+  background: black;
+}
+#exploreClub .club-content .club-play .club-photo > img:nth-of-type(1) {
+  width: 1280px;
+  display: block;
+}
+#exploreClub .club-content .club-play .club-photo .photo-content {
+  background: #323232;
+  padding: 54px 0 48px 99px;
+  overflow: hidden;
+}
+#exploreClub .club-content .club-play .club-photo .photo-content img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 325px;
+}
+#exploreClub .club-content .club-play .club-photo .photo-content span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 42px;
+  background: black;
+  color: white;
+  text-align: center;
+  line-height: 42px;
+  font-size: 20px;
+}
+#exploreClub .club-content .club-play .club-photo .photo-content .photo-jj, #exploreClub .club-content .club-play .club-photo .photo-content .photo-zp, #exploreClub .club-content .club-play .club-photo .photo-content .photo-sp {
+  position: relative;
+  width: 325px;
+  height: 224px;
+  float: left;
+  margin-right: 20px;
+}
+#exploreClub .club-content .club-play .club-photo .photo-content .photo-sp {
+  margin-left: 58px;
+}
+#exploreClub .club-content .club-play .club-photo .photo-content .photo-sp img:nth-of-type(2) {
+  width: 138px;
+  height: 42px;
+  left: 0;
+  cursor: pointer;
+  top: 156px;
+}

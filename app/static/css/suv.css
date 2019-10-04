@@ -1,0 +1,192 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.suv-wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 754px;
+  position: absolute;
+  left: 0;
+  top: 70px;
+}
+
+.suv-content {
+  width: 100%;
+  height: 100%;
+}
+.suv-content .suv-img {
+  width: 100%;
+  height: 75%;
+  min-height: 562px;
+  position: relative;
+  background: url("../images/block2.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.suv-content .suv-img .suv-one, .suv-content .suv-img .suv-two {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.suv-content .suv-img .suv-one > img, .suv-content .suv-img .suv-two > img {
+  width: 100%;
+  height: 100%;
+}
+.suv-content .suv-img .suv-one span, .suv-content .suv-img .suv-two span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 7.7%;
+  height: 5%;
+  cursor: pointer;
+}
+.suv-content .suv-img .suv-one {
+  display: block;
+}
+.suv-content .suv-img .suv-one span:nth-of-type(1) {
+  left: 25%;
+  top: 47%;
+}
+.suv-content .suv-img .suv-one span:nth-of-type(2) {
+  left: 25%;
+  top: 66%;
+}
+.suv-content .suv-img .suv-one span:nth-of-type(3) {
+  left: 67.45%;
+  top: 83.1%;
+}
+.suv-content .suv-img .suv-two {
+  display: none;
+}
+.suv-content .suv-img .suv-two span:nth-of-type(1) {
+  left: 64.8%;
+  top: 46.5%;
+}
+.suv-content .suv-img .suv-two span:nth-of-type(2) {
+  left: 64.8%;
+  top: 70.6%;
+}
+.suv-content .suv-img .suv-ball {
+  position: absolute;
+  z-index: 99;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  bottom: 5%;
+  left: 41%;
+  background: radial-gradient(white 0%, white 40%, transparent 41%, transparent 60%, rgba(255, 255, 255, 0.5) 61%, rgba(255, 255, 255, 0.5) 100%);
+  animation: opaSuv 1.5s linear infinite;
+  cursor: pointer;
+}
+@keyframes opaSuv {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.suv-content .suv-img .suv-detail {
+  width: 75%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 52px;
+  margin: 0 auto;
+  position: absolute;
+  display: none;
+  z-index: 99;
+}
+.suv-content .suv-img .suv-detail .detail-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.suv-content .suv-img .suv-detail .detail-img > img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+.suv-content .suv-img .suv-detail .suv-close {
+  position: absolute;
+  z-index: 100;
+  width: 3.8%;
+  right: 0;
+  height: 7.5%;
+  cursor: pointer;
+}
+.suv-content .suv-img .suv-detail .suv-left, .suv-content .suv-img .suv-detail .suv-right {
+  width: 3%;
+  height: 9%;
+  top: 34%;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+}
+.suv-content .suv-img .suv-detail .suv-left img, .suv-content .suv-img .suv-detail .suv-right img {
+  width: 100%;
+  height: 100%;
+}
+.suv-content .suv-img .suv-detail .suv-left {
+  left: -5%;
+}
+.suv-content .suv-img .suv-detail .suv-right {
+  right: -5%;
+}
+.suv-content .suv-input {
+  width: 100%;
+  height: 136px;
+  text-align: center;
+  padding-top: 52px;
+  font-size: 18px;
+}
+.suv-content .suv-input label {
+  margin: 10px;
+  font-weight: 550;
+}
+.suv-content .suv-input label input {
+  width: 150px;
+  height: 20px;
+  border: 2px solid orange;
+  outline: none;
+}
+.suv-content .suv-input select {
+  width: 155px;
+  height: 25px;
+  border: 2px solid orange;
+  outline: none;
+}
+.suv-content .suv-input p {
+  line-height: 25px;
+}
+.suv-content .suv-input p input {
+  width: 15px;
+  height: 15px;
+}
+.suv-content .suv-input p span {
+  font-size: 14px;
+  color: #999999;
+  letter-spacing: 2px;
+}
+.suv-content .suv-input p button {
+  width: 152px;
+  height: 52px;
+  margin-top: 25px;
+  background: orange;
+  outline: none;
+  border: none;
+  margin-left: 152px;
+  font-size: 16px;
+}

@@ -1,0 +1,231 @@
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  z-index: 999;
+  background-color: #000000;
+  min-width: 8rem;
+}
+header .bx {
+  position: relative;
+  height: 100%;
+}
+header .bx .logo {
+  width: 80px;
+  float: left;
+  padding: 23px 0;
+}
+header .bx .logo img {
+  display: block;
+  height: 24px;
+}
+header .bx ul li {
+  float: left;
+  line-height: 70px;
+  color: white;
+  padding: 0 15px;
+}
+header .bx .left {
+  float: left;
+}
+header .bx .left > li:nth-of-type(1):hover {
+  background: white;
+  color: #000000;
+}
+header .bx .left li a {
+  color: white;
+}
+header .bx .left li:nth-of-type(6) a {
+  color: orange;
+}
+header .bx .left li:nth-of-type(1):hover .head-car {
+  display: block;
+}
+header .bx .left li .head-car {
+  display: none;
+  width: 1280px;
+  left: 0;
+  top: 69px;
+  z-index: 999;
+  position: absolute;
+  background: white;
+  overflow: hidden;
+}
+header .bx .left li .head-car ul {
+  width: 544px;
+  float: left;
+}
+header .bx .left li .head-car ul li {
+  float: left;
+  width: 272px;
+  height: 132px;
+  overflow: hidden;
+  padding: 0;
+  border-bottom: 1px solid #aaaaaa;
+}
+header .bx .left li .head-car ul li img {
+  width: 218px;
+  position: relative;
+  left: 28px;
+}
+header .bx .left li .head-car ul li:hover {
+  background: #eeeeee;
+}
+header .bx .left li .head-car ul .no-border {
+  border-bottom: none;
+}
+header .bx .left li .head-car .car-img {
+  float: left;
+  width: 736px;
+  height: 664px;
+  overflow: hidden;
+}
+header .bx .left li .head-car .car-img img {
+  display: block;
+  float: left;
+  width: 368px;
+}
+header .bx .left li .head-car .car-img a:nth-of-type(1) img {
+  width: 736px;
+}
+header .bx .right {
+  float: right;
+}
+header .bx .right li a {
+  color: white;
+}
+header .carbuy {
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  top: 252px;
+  width: 200px;
+  overflow: hidden;
+  height: 102px;
+}
+header .carbuy li {
+  overflow: hidden;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  width: 50px;
+  top: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+header .carbuy li:nth-of-type(2) {
+  border-top: 2px solid #000000;
+  top: 52px;
+}
+header .carbuy li img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header .carbuy li:nth-of-type(2) img {
+  top: -50px;
+}
+header .carbuy li:hover {
+  width: 200px;
+}
+header .head-order-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 1000;
+  color: white;
+}
+header .head-order-bg .head-order {
+  width: 820px;
+  height: 100%;
+  padding: 0 230px;
+  margin: 0 auto;
+  position: relative;
+  background: rgba(62, 62, 65, 0.9);
+}
+header .head-order-bg .head-order .order-close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+header .head-order-bg .head-order .order-close img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+header .head-order-bg .head-order h1 {
+  text-align: center;
+  padding-top: 52px;
+  font-weight: 550;
+  color: #e5e5e5;
+  font-size: 60px;
+  letter-spacing: 26px;
+  margin-bottom: 90px;
+}
+header .head-order-bg .head-order h3 {
+  font-size: 22px;
+  color: #ffb300;
+  margin-bottom: 25px;
+  letter-spacing: 5px;
+}
+header .head-order-bg .head-order p {
+  color: rgba(229, 229, 229, 0.9);
+  position: relative;
+  top: -28px;
+  font-size: 14px;
+}
+header .head-order-bg .head-order input {
+  width: 295px;
+  border: none;
+  height: 35px;
+  padding: 0 10px;
+  background: rgba(33, 33, 33, 0.9);
+  margin-right: 25px;
+  border-radius: 5px;
+  color: rgba(229, 229, 229, 0.8);
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+header .head-order-bg .head-order input::-webkit-input-placeholder {
+  color: rgba(229, 229, 229, 0.5);
+}
+header .head-order-bg .head-order select {
+  width: 316px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(33, 33, 33, 0.9);
+  color: rgba(229, 229, 229, 0.5);
+  margin-bottom: 25px;
+}
+header .head-order-bg .head-order span {
+  position: absolute;
+  width: 605px;
+  height: 416px;
+  overflow: hidden;
+  right: 70px;
+  top: 208px;
+}
+header .head-order-bg .head-order span img {
+  transform: scale(1.5);
+}
+header .head-order-bg .head-order .sel div {
+  font-size: 14px;
+}
+header .head-order-bg .head-order .sel div input {
+  width: 12px;
+  height: 12px;
+  margin-right: 15px;
+}
+header .head-order-bg .head-order .sel div img {
+  vertical-align: middle;
+  margin-left: 52px;
+  cursor: pointer;
+}

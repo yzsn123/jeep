@@ -1,0 +1,254 @@
+
+
+.banner{
+    width: 100%;
+    margin-top: 70px;
+    height: 684px;
+    img{
+        width: 100%;
+        height: 684px;
+    }
+    .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border-radius: 100%;
+        background: white;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background: #ffb300;
+    }
+}
+
+.car-select{
+    width: 100%;
+    min-width: 1280px;
+    height: 428px;
+    padding: 52px 0 0;
+    background: url('../images/block1.jpg') center/cover no-repeat;
+    .car-bg{
+        width: 1280px;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        .car-s{
+            overflow: hidden;
+            width: 1280px;
+            height: 352px;
+            .swiper-container{
+                width: 256px;
+                overflow: visible;
+                height: 100%;
+                padding: 80px 0 0;
+                .swiper-wrapper{
+                    width: 256px;
+                }
+                .swiper-slide{
+                    width: 256px;
+                    text-align: center;
+                    transition:all 0.5s;
+                    img{
+                        width: 248px;
+                        display: block;
+                    }
+                    h3{
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 40px;
+                    }
+                    h4{
+                        visibility: hidden;
+                        font-size: 12px;
+                    }
+                    .car-flow{
+                        opacity: 0;
+                        transition: 1s;
+                        position: relative;
+                        top: -24px;
+                    }
+                }
+                .swiper-slide-active{
+                    transform: scale(1.5);
+                    h4{
+                        visibility: visible;
+                    }
+                    .car-flow{
+                        opacity: 1;
+                        transform: scaleY(2);
+                    }
+                }
+            }
+        }
+        .swiper-button-prev{
+            left: -56px;
+            background-image:url('../images/prev.png');
+        }
+        .swiper-button-prev:hover{
+            background-image:url('../images/prev_hover.png')
+        }
+
+        .swiper-button-next{
+            right: -56px;
+            background-image:url('../images/next.png');
+        }
+        .swiper-button-next:hover{
+            background-image:url('../images/next_hover.png');
+        }
+        .drag{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 29px;
+            transform: translateX(-4px);
+            bottom: 88px;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        &:hover .drag{
+            opacity: 1;
+        }
+    }
+}
+
+.jeepSever-bg{
+    width: 100%;
+    background: black;
+    height: 442px;
+    .jeepSever{
+        height: 100%;
+        width: 1280px;
+        display: flex;
+        a{
+            flex: 1;
+            float: left;
+            position: relative; 
+            overflow: hidden;
+            transition:all 0.6s;
+            img{
+                display: block;
+                height: 456px;
+                transition: all 0.6s;
+                transform: translateX(-28px);
+            }
+            &:nth-of-type(even){
+                top: -30px;
+            }
+            &:nth-of-type(odd){
+                top: -55px;
+            }
+            &:hover{
+                flex: 1.5;
+            }
+            &:hover img{
+                transform: translateX(0px);
+            }
+        }
+    }
+}
+
+.jeep-club-bg{
+    margin-top:30px;
+    text-align: center;
+    height: 1291px;
+    background: url('../images/block3.jpg') no-repeat bottom;
+    background-size: 100%;
+
+    h2{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 26px;
+    }
+    .jeep-club-img{
+        width: 1280px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+            display: block;
+        }
+        .jeep-jz{
+            position: absolute;
+            overflow: hidden;
+            bottom: -66px;
+            a,img{
+                float: left;
+                width: 324px;
+            }
+            a{
+                margin: 0 5px;
+                position: relative;
+                span{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 5px;
+                    background: #ffb300;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                &:hover span{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.jeep-link-bg{
+    width: 100%;
+    height: 230px;
+    background: #e7e7e7;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .jeep-link{
+        position: absolute;
+        top: -128px;
+        a{
+            float: left;
+            width: 420px;
+            overflow: hidden;
+            text-align: center;
+            div{
+                width: 420px;
+                height: 279px;
+                overflow: hidden;
+            }
+            img{
+                display: block;
+                width: 100%;
+                transition: all 1s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            &:nth-of-type(2){
+                margin: 0 10px;
+            }
+            h3{
+                margin-top: 15px;
+                font-size: 24px;
+                font-weight: 600;
+                img{
+                    width: 12px;
+                    display: inline-block;
+                    position: relative;
+                    top: 2px;
+                    left:8px;
+                    transition: 0.5s;
+                }
+            }
+            &:hover h3 img{
+                left: 15px;
+            }
+        }
+    }
+
+    
+}
+

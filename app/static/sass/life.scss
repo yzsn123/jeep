@@ -1,0 +1,287 @@
+
+.nav-bg{
+    width: 100%;
+    height: 110px;
+    background: black;
+    .nav{
+        position: fixed;
+        z-index: 888;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: black;
+        line-height: 40px;
+        li{
+            float: left;
+            margin-right: 25px;
+            a{
+                font-size: 14px;
+                color: white;
+            }
+        }
+        .top{
+            float: right;
+        }
+    }
+}
+#history{
+    width: 100%;
+    text-align: center;
+    line-height: 84px;
+    .his-head{
+        width: 100%;
+        height: 84px;
+        background: black;
+        h2{
+            font-size: 30px;
+            color: white;
+            font-weight: 600;
+        }
+    }
+    img{
+        display: block;
+    }
+    &>img{
+        width: 100%;
+        height: 608px;
+    }
+    .his-text1{
+        padding:42px 0 56px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 1240px;
+        }
+        .his-jt{
+            position: absolute;
+            top: -42px;
+            width: 76px;
+        }
+    }
+    .his-year{
+        width: 100%;
+        height: 614px;
+        background: url('../images/h_bg1.jpg') no-repeat;
+        background-size: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        .year-head{
+            height: 83px;
+            background:black;
+            a{
+                padding:10px 20px;
+                color: white;
+                font-size: 20px;
+                font-weight: 550;
+                border-bottom: 3px solid transparent;
+                cursor: pointer;
+            }
+        }
+        .year-content{
+            height: 531px;
+            top: 83px;
+            position: absolute;
+            overflow: auto;
+            img{
+                width:1265px;
+                display: block;
+            }
+        }
+    }
+}
+#exploreClub{
+    width: 100%;
+    background: #f2f2f2;
+    height: 3700px;
+    .club-head{
+        width: 100%;
+        height:83px;
+        background: black;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-weight: 550;
+        line-height: 83px;
+    }
+    &>img:nth-of-type(1){
+        width: 100%;
+        height: 750px;
+        display: block;
+    }
+    .club-content{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &>img:nth-of-type(1){
+            width: 1280px;
+            margin:58px 0 70px;
+        }
+        &>img:nth-of-type(2){
+            position: absolute;
+            top: -42px;
+        }
+        &>img:nth-of-type(3),&>img:nth-of-type(4){
+            width: 100%;
+            height: 900px;
+            
+        }
+        .club-play{
+            position: absolute;
+            top: 244px;
+            width: 1280px;
+            .club-go{
+                background: white;
+                width: 100%;
+                h3{
+                    width: 100%;
+                    text-align: center;
+                    height: 83px;
+                    line-height: 83px;
+                    color: white;
+                    font-weight: 550;
+                    background: black;
+                }
+                .club-banner{
+                    width: 100%;
+                    height: 705px;
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    .img-content{
+                        width: 975px;
+                        height: 100%;
+                        position: relative;
+                        img{
+                            position: absolute;
+                            width: 100%;
+                            &:nth-of-type(2){
+                                top:464px;
+                            }
+                        }
+                        div{
+                            opacity: 0;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .club-num{
+                        position: absolute;
+                        bottom: 20px;
+                        z-index: 10;
+                        span{
+                            display: inline-block;
+                            margin: 0 15px;
+                            width: 15px;
+                            height: 15px;
+                            background: black;
+                            border-radius: 50%;
+                            cursor: pointer;
+                        }
+                    }
+                    .left,.right{
+                        position: absolute;
+                        top: 260px;
+                        cursor: pointer;
+                    }
+                    .left{
+                        left: 52px;
+                    }
+                    .right{
+                        right:52px;
+                    }
+                }
+            }    
+            .club-run{
+                width: 1280px;
+                margin-top: 31px;
+                h3{
+                    width: 100%;
+                    height: 83px;
+                    line-height: 83px;
+                    color: white;
+                    text-align: center;
+                    background: black;
+                }
+                .run-content{
+                    height: 410px;
+                    img:nth-of-type(1){
+                        width: 485px;
+                        height: 323px;
+                        margin-top: 68px;
+                        margin-left: 152px;
+                    }
+                    img:nth-of-type(2){
+                        width: 335px;
+                        height: 252px;
+                        margin-left: 75px;
+                        position: relative;
+                        top: -29px;
+                    }
+                }
+            }
+
+            .club-photo{
+                width: 1280px;
+                margin-top: 502px;
+                h3{
+                    width: 100%;
+                    height: 83px;
+                    line-height: 83px;
+                    color: white;
+                    text-align: center;
+                    background: black;
+                }
+                &>img:nth-of-type(1){
+                    width: 1280px;
+                    display: block;
+                }
+                .photo-content{
+                    background: #323232;
+                    padding:54px 0 48px 99px;
+                    overflow: hidden;
+                    img{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 325px;
+                    }
+                    span{
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 42px;
+                        background: black;
+                        color: white;
+                        text-align: center;
+                        line-height: 42px;
+                        font-size: 20px;
+                    }
+                    .photo-jj,.photo-zp,.photo-sp{
+                        position: relative;
+                        width: 325px;
+                        height: 224px;
+                        float: left;
+                        margin-right: 20px;
+                    }
+                    .photo-sp{
+                       margin-left: 58px;
+                       img:nth-of-type(2){
+                           width: 138px;
+                           height: 42px;
+                           left: 0;
+                           cursor: pointer;
+                           top: 156px;
+                       }
+                    }
+                }
+            }
+        }
+    }
+}

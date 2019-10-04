@@ -1,0 +1,54 @@
+h1,h2,h3,h4,h5,ul,dl,ol,dd,dt,td,body,input,html{
+    padding: 0;
+    margin: 0;
+}
+input,select,button{
+    outline: none;
+}
+.bx{
+    width: 1280px;
+    margin: 0 auto;
+}
+body{
+    /* font-family: "DIN", "Helvetica Neue", Helvetica, Arial, "汉仪中黑简", "汉仪大黑简", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro He", sans-serif;
+     */
+     font-family: '微软雅黑'
+}
+li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5{
+    font-weight: normal;
+}
+a{
+    cursor: pointer;
+}
+a,i,em{
+    font-style: normal;
+    text-decoration: none;
+    color: #333333;
+}
+.margin{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: rgba(229,229,229,0.8);
+}
+ 
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: rgba(229,229,229,0.8);
+}
+ 
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: rgba(229,229,229,0.8);
+}
+ 
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: rgba(229,229,229,0.8);
+}
