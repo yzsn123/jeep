@@ -116,10 +116,28 @@ header {
 
         .right {
             float: right;
-
             li {
-                a {
+                position: relative;
+                a { 
                     color: white;
+                    font-size: 14px;
+                    line-height: 70px;
+                    display: inline-block;
+                }
+                img{
+                    display: none;
+                    position: absolute;
+                    top: 25px;
+                    left: 8px;
+                }
+                em{
+                    display: none;
+                    position: absolute;
+                    left: 50%;
+                    line-height: 25px;
+                    top: 40px;
+                    transform: translateX(-50%);
+                    color: orange;
                 }
             }
         }

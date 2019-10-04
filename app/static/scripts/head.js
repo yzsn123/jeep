@@ -38,4 +38,24 @@ order.onclick = function(){
     orderBg.style.display = "block";
 }
 
+var headLogin = document.querySelector('.head-login');
+var headLoginImg = document.querySelector('.head-login img');
+var headLoginEm = document.querySelector('.head-login em');
+var headLoginSpan = document.querySelector('.head-login span');
+console.log(headLoginImg);
+console.log(headLoginEm)
+console.log(headLogin.innerHTML)
+judgeUser();
+//判断用户登录了没
+function judgeUser(){
 
+    if(getCookie('user')){
+        headLoginEm.style.display = 'block';
+        headLoginEm.innerText = "hello";
+        headLoginImg.style.display = 'block';
+    }else{
+        headLoginEm.style.display = 'none';
+        headLoginImg.style.display = 'none';
+        headLoginSpan.innerText = "登录 / 注册";
+    }
+}

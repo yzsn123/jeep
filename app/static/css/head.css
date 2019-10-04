@@ -94,8 +94,29 @@ header .bx .left li .head-car .car-img a:nth-of-type(1) img {
 header .bx .right {
   float: right;
 }
+header .bx .right li {
+  position: relative;
+}
 header .bx .right li a {
   color: white;
+  font-size: 14px;
+  line-height: 70px;
+  display: inline-block;
+}
+header .bx .right li img {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 8px;
+}
+header .bx .right li em {
+  display: none;
+  position: absolute;
+  left: 50%;
+  line-height: 25px;
+  top: 40px;
+  transform: translateX(-50%);
+  color: orange;
 }
 header .carbuy {
   position: fixed;

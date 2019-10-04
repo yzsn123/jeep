@@ -24,6 +24,23 @@ html, body {
   position: relative;
   top: -20px;
 }
+.shop-wrap .shop-content .shop-mesg {
+  position: absolute;
+  z-index: 99;
+  display: none;
+  width: 252px;
+  height: 152px;
+  background: red;
+  color: #f0f0f0;
+  font-weight: 550;
+  font-size: 25px;
+  line-height: 152px;
+  border-radius: 20px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 52px auto;
+}
 .shop-wrap .shop-content .shop-menu {
   width: 40%;
   float: left;

@@ -12,7 +12,7 @@ if(getCookie('code')){
 }else{
     var shopCode = '1';
 }
-
+//一进页面获取要展示的汽车
 getShop();
 
 for(var i = 0; i < shopLis.length; i++){
@@ -31,7 +31,7 @@ for(let i = 0; i < shopLis.length; i++){
 }
 
 
-
+//利用ajax获取汽车
 function getShop(){
     ajax({
         url:'../static/data/data.json',
@@ -51,4 +51,32 @@ function getShop(){
             shopH3.innerText = shopObj.price;
         }
     });
+}
+
+
+
+
+var shopCart = document.querySelector('.shop-cart');
+var shopBuy = document.querySelector('.shop-buy');
+var shopMesg = document.querySelector('.shop-mesg');
+
+shopCart.onclick = function(){
+    if(getCookie('user')){
+        var phone = getCookie('user');
+        var code = getCookie('code');
+        ajax({
+            url:'shop.php',
+            data:`user=${phone}&code=${code}`,
+            type:'POST',
+            succeed:function(){
+                shopMesg.style.display = 'block';
+                setTimeout(function(){
+                    shopMesg.style.display = 'none';
+                },500)
+            }
+        })
+    }
+    else{
+        alert('请先登录');
+    }
 }

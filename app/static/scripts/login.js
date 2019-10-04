@@ -1,6 +1,5 @@
 
 
-
 var submit1 = document.querySelector('.submit1');
 var submit2 = document.querySelector('.submit2');
 var login = document.querySelector('.login');
@@ -112,7 +111,8 @@ submit1.onclick = function(){
                         var json = JSON.parse(data);
                         // loginH3.innerText = json.msg;
                         if(json.msg == "登录成功"){
-                            window.location.href="../views/index.html"
+                            setCookie('user',logPhoneV,7);
+                            window.location.href = "../views/index.html"
                         }
                     }
                 })
@@ -121,7 +121,7 @@ submit1.onclick = function(){
             }
         }else{
             loginH3.innerText = '请输入正确的11位手机号';
-        }
+        }   
     }
 }
 
