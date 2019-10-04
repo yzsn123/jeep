@@ -1,0 +1,14 @@
+
+
+[
+    {"code":"1","title":"全新Jeep大指挥官","price":"￥27.98万起","detail":"专业级全场高端SUV","imgUrl":"../static/images/cartype1.png"},
+    {"code":"2","title":"全新Jeep指挥官","price":"￥25.98万起","detail":"专业级高端大五座SUV","imgUrl":"../static/images/cartype2.png"},
+    {"code":"3","title":"全新Jeep自由光","price":"￥19.68万起","detail":"专业级全驾控都市SUV","imgUrl":"../static/images/cartype3.png"},
+    {"code":"4","title":"Jeep自由光典尚版","price":"￥18.58万起","detail":"","imgUrl":"../static/images/cartype4.png"},
+    {"code":"5","title":"全新Jeep指南者","price":"￥15.98万起","detail":"专业级中高端城市","imgUrl":"../static/images/cartype5.png"},
+    {"code":"6","title":"全新Jeep自由侠","price":"￥12.98万起","detail":"专业级超驾趣SUV","imgUrl":"../static/images/cartype6.png"},
+    {"code":"7","title":"Jeep自由侠","price":"￥13.48万起","detail":"","imgUrl":"../static/images/cartype7.png"},
+    {"code":"8","title":"全新Jeep牧马人","price":"￥42.98万起","detail":"全球偶像级SUV","imgUrl":"../static/images/cartype8.png"},
+    {"code":"9","title":"进口牧马人","price":"￥42.98万起","detail":"","imgUrl":"../static/images/cartype9.png"},
+    {"code":"10","title":"进口Jeep大切诺基","price":"￥52.99万起","detail":"进口专业级大豪华SUV","imgUrl":"../static/images/cartype10.png"}
+]

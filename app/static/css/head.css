@@ -131,7 +131,8 @@ header .carbuy li:nth-of-type(2) img {
 header .carbuy li:hover {
   width: 200px;
 }
-header .head-order-bg {
+header .order-bg, header .shop-bg {
+  display: none;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -141,7 +142,7 @@ header .head-order-bg {
   z-index: 1000;
   color: white;
 }
-header .head-order-bg .head-order {
+header .order-bg .order, header .order-bg .shop, header .shop-bg .order, header .shop-bg .shop {
   width: 820px;
   height: 100%;
   padding: 0 230px;
@@ -149,18 +150,18 @@ header .head-order-bg .head-order {
   position: relative;
   background: rgba(62, 62, 65, 0.9);
 }
-header .head-order-bg .head-order .order-close {
+header .order-bg .order .order-close, header .order-bg .order .shop-close, header .order-bg .shop .order-close, header .order-bg .shop .shop-close, header .shop-bg .order .order-close, header .shop-bg .order .shop-close, header .shop-bg .shop .order-close, header .shop-bg .shop .shop-close {
   position: absolute;
   right: 30px;
   top: 30px;
   cursor: pointer;
 }
-header .head-order-bg .head-order .order-close img {
+header .order-bg .order .order-close img, header .order-bg .order .shop-close img, header .order-bg .shop .order-close img, header .order-bg .shop .shop-close img, header .shop-bg .order .order-close img, header .shop-bg .order .shop-close img, header .shop-bg .shop .order-close img, header .shop-bg .shop .shop-close img {
   width: 20px;
   height: 20px;
   opacity: 0.5;
 }
-header .head-order-bg .head-order h1 {
+header .order-bg .order h1, header .order-bg .shop h1, header .shop-bg .order h1, header .shop-bg .shop h1 {
   text-align: center;
   padding-top: 52px;
   font-weight: 550;
@@ -169,19 +170,19 @@ header .head-order-bg .head-order h1 {
   letter-spacing: 26px;
   margin-bottom: 90px;
 }
-header .head-order-bg .head-order h3 {
+header .order-bg .order h3, header .order-bg .shop h3, header .shop-bg .order h3, header .shop-bg .shop h3 {
   font-size: 22px;
   color: #ffb300;
   margin-bottom: 25px;
   letter-spacing: 5px;
 }
-header .head-order-bg .head-order p {
+header .order-bg .order p, header .order-bg .shop p, header .shop-bg .order p, header .shop-bg .shop p {
   color: rgba(229, 229, 229, 0.9);
   position: relative;
   top: -28px;
   font-size: 14px;
 }
-header .head-order-bg .head-order input {
+header .order-bg .order input, header .order-bg .shop input, header .shop-bg .order input, header .shop-bg .shop input {
   width: 295px;
   border: none;
   height: 35px;
@@ -193,10 +194,10 @@ header .head-order-bg .head-order input {
   font-size: 14px;
   margin-bottom: 25px;
 }
-header .head-order-bg .head-order input::-webkit-input-placeholder {
+header .order-bg .order input::-webkit-input-placeholder, header .order-bg .shop input::-webkit-input-placeholder, header .shop-bg .order input::-webkit-input-placeholder, header .shop-bg .shop input::-webkit-input-placeholder {
   color: rgba(229, 229, 229, 0.5);
 }
-header .head-order-bg .head-order select {
+header .order-bg .order select, header .order-bg .shop select, header .shop-bg .order select, header .shop-bg .shop select {
   width: 316px;
   height: 38px;
   border: none;
@@ -205,7 +206,7 @@ header .head-order-bg .head-order select {
   color: rgba(229, 229, 229, 0.5);
   margin-bottom: 25px;
 }
-header .head-order-bg .head-order span {
+header .order-bg .order span, header .order-bg .shop span, header .shop-bg .order span, header .shop-bg .shop span {
   position: absolute;
   width: 605px;
   height: 416px;
@@ -213,18 +214,18 @@ header .head-order-bg .head-order span {
   right: 70px;
   top: 208px;
 }
-header .head-order-bg .head-order span img {
+header .order-bg .order span img, header .order-bg .shop span img, header .shop-bg .order span img, header .shop-bg .shop span img {
   transform: scale(1.5);
 }
-header .head-order-bg .head-order .sel div {
+header .order-bg .order .sel div, header .order-bg .shop .sel div, header .shop-bg .order .sel div, header .shop-bg .shop .sel div {
   font-size: 14px;
 }
-header .head-order-bg .head-order .sel div input {
+header .order-bg .order .sel div input, header .order-bg .shop .sel div input, header .shop-bg .order .sel div input, header .shop-bg .shop .sel div input {
   width: 12px;
   height: 12px;
   margin-right: 15px;
 }
-header .head-order-bg .head-order .sel div img {
+header .order-bg .order .sel div img, header .order-bg .shop .sel div img, header .shop-bg .order .sel div img, header .shop-bg .shop .sel div img {
   vertical-align: middle;
   margin-left: 52px;
   cursor: pointer;

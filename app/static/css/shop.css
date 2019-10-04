@@ -1,0 +1,102 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.shop-wrap {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.shop-wrap .shop-logo {
+  text-align: center;
+  width: 80%;
+  margin-top: 38px;
+}
+.shop-wrap .shop-logo img {
+  transform: scale(1.3);
+}
+.shop-wrap .shop-content {
+  width: 1200px;
+  position: relative;
+  top: -20px;
+}
+.shop-wrap .shop-content .shop-menu {
+  width: 40%;
+  float: left;
+}
+.shop-wrap .shop-content .shop-menu h2 {
+  font-size: 46px;
+  letter-spacing: 5px;
+}
+.shop-wrap .shop-content .shop-menu p {
+  display: block;
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  margin: 0;
+  font-size: 30px;
+  color: #333333;
+}
+.shop-wrap .shop-content .shop-menu h3 {
+  color: #f0f0f0;
+  background: #ff0000;
+  margin-bottom: 25px;
+  display: inline-block;
+  padding: 0 5px;
+  line-height: 46px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 550;
+}
+.shop-wrap .shop-content .shop-menu ul {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.shop-wrap .shop-content .shop-menu ul li {
+  float: left;
+  width: 40%;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #f0f0f0;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0;
+  font-size: 14px;
+  text-align: center;
+  line-height: 25px;
+  cursor: pointer;
+}
+.shop-wrap .shop-content .shop-menu ul .shop-active {
+  background: orange;
+  font-weight: 550;
+}
+.shop-wrap .shop-content .shop-menu span {
+  display: inline-block;
+  width: 110px;
+  height: 56px;
+  line-height: 56px;
+  padding-left: 50px;
+  cursor: pointer;
+  margin: 10px 10px 10px 0;
+  clear: both;
+}
+.shop-wrap .shop-content .shop-menu .shop-buy {
+  background: url("../images/s_btn1.png") no-repeat;
+  background-size: 100%;
+}
+.shop-wrap .shop-content .shop-menu .shop-cart {
+  background: url("../images/s_btn2.png") no-repeat;
+  background-size: 100%;
+}
+.shop-wrap .shop-content .shop-show {
+  width: 60%;
+  float: right;
+  overflow: hidden;
+}
+.shop-wrap .shop-content .shop-show img {
+  transform: scale(1.5) translateX(52px) translateY(28px);
+}

@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header id="head">
+    <header>
         <div class="bx">
             <a class="logo" href="index.html">
                 <img src="../static/images/logo.png" alt="">
@@ -47,35 +47,71 @@
                 <li><a href="suv.html">专业SUV再进化</a></li>
             </ul>
             <ul class="right">
-                <li><a href="#">查询经销商</a></li>
-                <li><a href="#">预约试驾</a></li>
-                <li><a href="#">登录 / 注册</a></li>
+                <li class="head-login"><a href="login.html">登录 / 注册</a></li>
             </ul>
+        </div>
+
+        <ul class="carbuy">
+            <li class="head-order"><img src="../static/images/floatNav.png" alt=""></li>
+            <li class="head-shop"><a href="shop.html" target="_blank"><img src="../static/images/floatNav.png"
+                        alt=""></a></li>
+        </ul>
+        <div class="order-bg">
+            <div class="order">
+                <div class="order-close">
+                    <img src="../static/images/close.png" alt="">
+                </div>
+                <h1>申请试驾</h1>
+                <div class="sel">
+                    <h3>选择您的爱车</h3>
+                    <select id="cartype">
+                        <option value="0221">全新Jeep大指挥官</option>
+                        <option value="0221">全新Jeep指挥官</option>
+                        <option value="0223">全新Jeep自由光</option>
+                        <option value="0214">全新Jeep自由光典尚版</option>
+                        <option value="0219">Jeep指南者</option>
+                        <option value="0216">全新Jeep自由侠</option>
+                        <option value="0222">全新一代Jeep牧马人</option>
+                        <option value="0206">进口Jeep牧马人</option>
+                        <option value="0205">进口Jeep大切诺基</option>
+                    </select>
+                    <span><img src="../static/images/cartype1.png" alt=""></span>
+                    <h3>您的个人信息</h3>
+                    <input type="text" placeholder="姓名：">
+                    <br>
+                    <input type="text" placeholder="手机号">
+                    <p>您的个人信息我们将严格保密，请放心填写</p>
+                    <div>
+                        <input type="checkbox">我同意Jeep品牌的《隐私声明》条约与条件
+                        <br>
+                        <img src="../static/images/sj_btn.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <img src="../static/images/h_bg2.jpg" alt="" class="bg">
-    <div class="lo_wrap">
-        <div class="login">
-            <form>
+    <div class="login-box">
+        <div class="login-wrap">
+            <div class="login">
                 <input type="text" placeholder="请输入注册的手机号">
                 <input type="password" placeholder="请输入注册密码">
                 <p><input type="checkbox">记住密码</p>
-                <button class="submit1">登录</button>
-                <button class="submit2">没有账号点击注册</button>
-            </form>
-        </div>
-        <div class="reg">
-            <form>
+            </div>
+            <div class="reg">
                 <input type="text" placeholder="请输入要注册的手机号">
                 <input type="password" placeholder="请输入注册密码">
                 <input type="password" placeholder="请再次输入密码">
-                <button class="submit1">注册</button>
-                <button class="submit2">返回登录</button>
-            </form>
+            </div>
+            <button class="submit1">登录</button>
+            <button class="submit2">没有账号点击注册</button>
         </div>
 
     </div>
 
+    <script src="../static/scripts/cookie.js"></script>
+    <script src="../static/scripts/login.js"></script>
+    <script src="../static/scripts/head.js"></script>
 </body>
 
 </html>
