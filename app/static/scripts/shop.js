@@ -68,7 +68,8 @@ shopCart.onclick = function(){
             url:'shop.php',
             data:`user=${phone}&code=${code}`,
             type:'POST',
-            succeed:function(){
+            succeed:function(data){
+                console.log(data);
                 shopMesg.style.display = 'block';
                 setTimeout(function(){
                     shopMesg.style.display = 'none';

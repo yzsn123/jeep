@@ -96,6 +96,7 @@ header .bx .right {
 }
 header .bx .right li {
   position: relative;
+  margin: 0 25px;
 }
 header .bx .right li a {
   color: white;
@@ -103,7 +104,13 @@ header .bx .right li a {
   line-height: 70px;
   display: inline-block;
 }
-header .bx .right li img {
+header .bx .right li:nth-of-type(1) img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 9px;
+}
+header .bx .right li:nth-of-type(2) img {
   display: none;
   position: absolute;
   top: 25px;
