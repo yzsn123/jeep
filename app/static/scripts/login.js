@@ -109,9 +109,15 @@ submit1.onclick = function(){
                     type:'post',
                     succeed:function(data){
                         var json = JSON.parse(data);
-                        // loginH3.innerText = json.msg;
+                        loginH3.innerText = json.msg;
                         if(json.msg == "登录成功"){
                             setCookie('user',logPhoneV,7);
+                            if(logRem.checked){
+                                var str = JSON.stringify({'phone':logPhoneV,'psd':logPsdV})
+                                setCookie('checked',str,7);
+                            }else{
+                                removeCookie('checked');
+                            }
                             window.location.href = "../views/index.html"
                         }
                     }
@@ -133,4 +139,11 @@ function judgeTel (tel){
         return true;
       }
     return false;
+}
+
+if(getCookie('checked')){
+    var logChecked = JSON.parse(getCookie('checked'));
+    logRem.checked = true;
+    logPhone.value =logChecked.phone;
+    logPsd.value = logChecked.psd;
 }
