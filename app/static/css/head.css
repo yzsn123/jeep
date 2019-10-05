@@ -55,21 +55,22 @@ header .bx .left li .head-car {
   overflow: hidden;
 }
 header .bx .left li .head-car ul {
-  width: 544px;
+  width: 580px;
   float: left;
 }
 header .bx .left li .head-car ul li {
   float: left;
-  width: 272px;
-  height: 132px;
+  width: 290px;
+  height: 112px;
   overflow: hidden;
   padding: 0;
   border-bottom: 1px solid #aaaaaa;
 }
 header .bx .left li .head-car ul li img {
-  width: 218px;
+  width: 200px;
   position: relative;
-  left: 28px;
+  left: 30px;
+  top: -5px;
 }
 header .bx .left li .head-car ul li:hover {
   background: #eeeeee;
@@ -79,17 +80,18 @@ header .bx .left li .head-car ul .no-border {
 }
 header .bx .left li .head-car .car-img {
   float: left;
-  width: 736px;
-  height: 664px;
+  width: 700px;
+  height: 564px;
   overflow: hidden;
 }
 header .bx .left li .head-car .car-img img {
   display: block;
   float: left;
-  width: 368px;
+  width: 350px;
 }
 header .bx .left li .head-car .car-img a:nth-of-type(1) img {
-  width: 736px;
+  width: 700px;
+  height: 405px;
 }
 header .bx .right {
   float: right;

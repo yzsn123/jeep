@@ -81,14 +81,14 @@
   transform: scaleY(2);
 }
 .car-select .car-bg .swiper-button-prev {
-  left: -56px;
+  left: -12px;
   background-image: url("../images/prev.png");
 }
 .car-select .car-bg .swiper-button-prev:hover {
   background-image: url("../images/prev_hover.png");
 }
 .car-select .car-bg .swiper-button-next {
-  right: -56px;
+  right: -12px;
   background-image: url("../images/next.png");
 }
 .car-select .car-bg .swiper-button-next:hover {

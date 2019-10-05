@@ -8,7 +8,6 @@ header {
     z-index: 999;
     background-color: #000000;
     min-width: 8rem;
-
     .bx {
         position: relative;
         height: 100%;
@@ -67,21 +66,22 @@ header {
                     overflow: hidden;
 
                     ul {
-                        width: 544px;
+                        width: 580px;
                         float: left;
 
                         li {
                             float: left;
-                            width: 272px;
-                            height: 132px;
+                            width: 290px;
+                            height: 112px;
                             overflow: hidden;
                             padding: 0;
                             border-bottom: 1px solid #aaaaaa;
 
                             img {
-                                width: 218px;
+                                width: 200px;
                                 position: relative;
-                                left: 28px;
+                                left: 30px;
+                                top: -5px;
                             }
 
                             &:hover {
@@ -96,18 +96,19 @@ header {
 
                     .car-img {
                         float: left;
-                        width: 736px;
-                        height: 664px;
+                        width: 700px;
+                        height: 564px;
                         overflow: hidden;
 
                         img {
                             display: block;
                             float: left;
-                            width: 368px;
+                            width: 350px;
                         }
 
                         a:nth-of-type(1) img {
-                            width: 736px;
+                            width: 700px;
+                            height: 405px;
                         }
                     }
                 }
