@@ -71,6 +71,7 @@ shopCart.onclick = function(){
             succeed:function(data){
                 console.log(data);
                 shopMesg.style.display = 'block';
+                shopMesg.innerText = '加入购物车成功';
                 setTimeout(function(){
                     shopMesg.style.display = 'none';
                 },500)
@@ -80,4 +81,11 @@ shopCart.onclick = function(){
     else{
         alert('请先登录');
     }
+}
+shopBuy.onclick = function(){
+    shopMesg.innerText = '购买成功';
+    shopMesg.style.display = 'block';
+    setTimeout(function(){
+        shopMesg.style.display = 'none';
+    },500)
 }

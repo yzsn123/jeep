@@ -37,7 +37,7 @@ if (getCookie('user')) {
                         <button code="${obj[i].code}">删除</button>`
                             cart.appendChild(li);
                         }
-                        // console.log(obj)
+                       
                         var cartDel = document.querySelectorAll('.cart button');
                         for(let i = 0; i < cartDel.length; i++){
                             cartDel[i].onclick = function(){
@@ -54,7 +54,12 @@ if (getCookie('user')) {
                                 })
                             }
                         }
-                        
+                        var cartSpan = document.querySelectorAll('.cart span');
+                            for(let i = 0; i < cartDel.length; i++){
+                                cartSpan[i].onclick = function(){
+                                    alert('购买成功')
+                                }
+                        }
                     }
                 }
             })
