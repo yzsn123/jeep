@@ -312,7 +312,7 @@ header .bx .left li .head-car ul {
 header .bx .left li .head-car ul li {
   float: left;
   width: 290px;
-  height: 121px;
+  height: 112px;
   overflow: hidden;
   padding: 0;
   border-bottom: 1px solid #aaaaaa;
@@ -322,6 +322,7 @@ header .bx .left li .head-car ul li img {
   width: 200px;
   position: relative;
   left: 30px;
+  top:-5px;
 }
 
 header .bx .left li .head-car ul li:hover {
@@ -335,7 +336,7 @@ header .bx .left li .head-car ul .no-border {
 header .bx .left li .head-car .car-img {
   float: left;
   width: 700px;
-  height: 633px;
+  height: 564px;
   overflow: hidden;
 }
 
