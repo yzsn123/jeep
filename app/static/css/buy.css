@@ -1,0 +1,73 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.buy-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 33, 33, 0.8);
+  color: #ff0000;
+  font-size: 50px;
+  letter-spacing: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy {
+  width: 1280px;
+  margin: 25px auto;
+  overflow: hidden;
+}
+.buy li {
+  width: 550px;
+  float: left;
+  position: relative;
+  padding: 6px 25px;
+  overflow: hidden;
+  background: rgba(33, 33, 33, 0.8);
+  border-radius: 10px;
+  margin: 25px 20px;
+}
+.buy li img {
+  float: left;
+}
+.buy li > img {
+  width: 300px;
+  margin-right: 25px;
+}
+.buy li button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  color: white;
+  background: transparent;
+  font-style: oblique;
+  cursor: pointer;
+}
+.buy li h3 {
+  margin-top: 28px;
+  font-size: 25px;
+  color: #f0f0f0;
+  line-height: 35px;
+}
+.buy li h4 {
+  font-size: 16px;
+  background: #ff0000;
+  color: #f0f0f0;
+  font-weight: 550;
+  display: inline-block;
+  padding: 5px 10px;
+  line-height: 25px;
+}
+.buy li p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #eeeeee;
+}

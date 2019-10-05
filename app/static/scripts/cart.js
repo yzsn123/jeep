@@ -10,7 +10,7 @@ if (getCookie('user')) {
         type: 'post',
         succeed: function (data) {
             var cartJson = JSON.parse(data);
-            // console.log(cartJson);
+            
             ajax({
                 url: '../static/data/data.json',
                 type: 'post',
@@ -55,11 +55,27 @@ if (getCookie('user')) {
                             }
                         }
                         var cartSpan = document.querySelectorAll('.cart span');
+
                             for(let i = 0; i < cartDel.length; i++){
                                 cartSpan[i].onclick = function(){
-                                    alert('购买成功')
+
+                                    var buyCode = cartDel[i].getAttribute('code');
+
+                                    ajax({
+                                        url: 'buy.php',
+                                        data: `phone=${cartPhone}&code=${buyCode}&buy=buy`,
+                                        type: 'post',
+                                        succeed:function(data){
+                                            data = JSON.parse(data);
+                                            if(data.mesg == '购买成功'){
+                                                alert('购买成功，可点击订单查看');
+                                            }
+                                        }
+                                    })
                                 }
                         }
+                    } else{
+                        cartWrap.innerText = ' 购物车空空如也，赶紧去选购商品吧！'
                     }
                 }
             })

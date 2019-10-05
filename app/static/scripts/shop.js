@@ -82,10 +82,29 @@ shopCart.onclick = function(){
         alert('请先登录');
     }
 }
+
 shopBuy.onclick = function(){
-    shopMesg.innerText = '购买成功';
-    shopMesg.style.display = 'block';
-    setTimeout(function(){
-        shopMesg.style.display = 'none';
-    },500)
+    if(getCookie('user')){
+        var phone = getCookie('user');
+        var code = getCookie('code');
+        ajax({
+            url:'buy.php',
+            data:`phone=${phone}&code=${code}&buy=buy`,
+            type:'POST',
+            succeed:function(data){
+                var data = JSON.parse(data);
+                if(data.mesg == '购买成功'){
+                    shopMesg.style.display = 'block';
+                    shopMesg.innerText = '购买成功';
+                    setTimeout(function(){
+                        shopMesg.style.display = 'none';
+                    },500)
+                }
+                
+            }
+        })
+    }
+    else{
+        alert('请先登录');
+    }
 }

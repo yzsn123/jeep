@@ -108,13 +108,13 @@ header .bx .right li a {
   line-height: 70px;
   display: inline-block;
 }
-header .bx .right li:nth-of-type(1) img {
+header .bx .right li:nth-of-type(2) img {
   width: 30px;
   height: 30px;
   position: relative;
   top: 9px;
 }
-header .bx .right li:nth-of-type(2) div {
+header .bx .right li:nth-of-type(3) div {
   display: none;
   width: 35px;
   height: 100%;
@@ -122,13 +122,13 @@ header .bx .right li:nth-of-type(2) div {
   left: 0;
   top: 0;
 }
-header .bx .right li:nth-of-type(2) div img {
+header .bx .right li:nth-of-type(3) div img {
   width: 15px;
   height: 15px;
   position: relative;
   left: 10px;
 }
-header .bx .right li:nth-of-type(2) div:hover i {
+header .bx .right li:nth-of-type(3) div:hover i {
   display: block;
 }
 header .bx .right li em,
