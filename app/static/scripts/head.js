@@ -42,6 +42,7 @@ var headLogin = document.querySelector('.head-login');
 var headLoginImg = document.querySelector('.head-login img');
 var headLoginEm = document.querySelector('.head-login em');
 var headLoginSpan = document.querySelector('.head-login span');
+var headLoginDiv = document.querySelector('.head-login div');
 // console.log(headLoginImg);
 // console.log(headLoginEm)
 // console.log(headLogin.innerHTML)
@@ -50,12 +51,19 @@ judgeUser();
 function judgeUser(){
 
     if(getCookie('user')){
-        headLoginEm.style.display = 'block';
+        // headLoginEm.style.display = 'block';
         headLoginEm.innerText = "hello";
-        headLoginImg.style.display = 'block';
+        // headLoginImg.style.display = 'block';
+        headLoginDiv.style.display = 'block';
     }else{
-        headLoginEm.style.display = 'none';
-        headLoginImg.style.display = 'none';
+        // headLoginEm.style.display = 'none';
+        // headLoginImg.style.display = 'none';
+        headLoginDiv.style.display = 'none';
         headLoginSpan.innerText = "登录 / 注册";
     }
+}
+var headLoginI = document.querySelector('.head-login i');
+headLoginI.onclick = function(){
+    removeCookie('user');
+    location.reload();
 }
